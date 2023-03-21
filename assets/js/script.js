@@ -35,9 +35,6 @@ function today() {
       // Create img element to display icon
       var iconEl = $("<img>").attr({ id: "current-weather-icon'", src: currentWeatherIconURL, alt: "WeatherIcon" })
 
-      // // Temperature in celcius, code adopted from challenges in class
-      // var tempC = todayweather.main.temp - 273.15;
-
       // Define the elements to append
       var tempEl = $("<p>").text("Temp: " + todayweather.main.temp + " °C");
       var windEl = $("<p>").text("Wind: " + todayweather.wind.speed + " MPH");
@@ -57,8 +54,6 @@ function today() {
       var citylat = todayweather.coord.lat;
       var citylon = todayweather.coord.lon;
       forecast(citylat, citylon);
-      // console.log(citylat);
-      // console.log(citylon);
     })
 };
 
