@@ -95,9 +95,9 @@ function forecast(citylat, citylon) {
         var forecastIconEl = $("<img>").attr({ src: "https://openweathermap.org/img/wn/" + forecastIcon + ".png", alt: "Weather Icon" });
 
         // Define the elements to append
-        var forecastTempEL = $("<p>").addClass("card-text").text("Temp: " + forecastdata.list[i].main.temp + " °C");
-        var forecastWindEL = $("<p>").addClass("card-text").text("Wind: " + forecastdata.list[i].wind.speed + " MPH")
-        var forecastHumidityEL = $("<p>").addClass("card-text").text("Humidity: " + forecastdata.list[i].main.humidity + "%")
+        var forecastTempEL = $("<p>").addClass("card-text").text("Temp: " + forecastdata.list[k].main.temp + " °C");
+        var forecastWindEL = $("<p>").addClass("card-text").text("Wind: " + forecastdata.list[k].wind.speed + " MPH")
+        var forecastHumidityEL = $("<p>").addClass("card-text").text("Humidity: " + forecastdata.list[k].main.humidity + "%")
         
         // To display        
         // append card title, icon, temp, wind, humdity element to card body div
